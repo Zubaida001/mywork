@@ -1,0 +1,72 @@
+body {
+    background-color: rgba(128, 128, 128, 0.022);
+}
+
+.box1 {
+    border: 1px solid orange;
+    background-color: orange;
+    padding: 50px;
+    width: 200px;
+    height: 400px ;
+}
+
+h1{
+    color: white;
+}
+
+.box2 {
+    background-color: darkcyan;
+    padding: 50px;
+    width: 200px;
+    height: 400px;
+}
+
+.box3 {
+    background-color: rgb(3, 81, 81);
+    padding: 50px;
+    width: 200px;
+    height: 400px ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /* note there must height for align items to work */
+    height: 100vh;
+    align-items: center;
+}
+
+.b2, .b1, .b3{
+    border: 2px solid white;
+    border-radius: 90px;
+    margin-top: 80px;
+    padding: 15px 30px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+.b:hover{
+    background-color: white;
+    color: orange;
+    transition: 0.5s;
+}
+
+.bb:hover{
+    background-color: white;
+    color: darkcyan;
+    transition: 0.5s;
+}
+
+.bbb:hover{
+    background-color: white;
+    color: rgb(3, 81, 81);
+    transition: 0.5s;
+}
+
+@media (width < 1023px){
+    .container{
+        flex-direction: column;
+    }
+}
